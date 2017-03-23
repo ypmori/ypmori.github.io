@@ -9,6 +9,6 @@ I've been diving into a lot of statistical computing here because of my interest
 
 ### Recent Projects
 
-#### [STA141B: An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ/)
+#### [STA141B: An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ)
 I worked with a couple other students for our class on Data and Web Technologies for Data Analysis.
 Please check it out! It also marks my first ever collaborative project on GitHub. 
