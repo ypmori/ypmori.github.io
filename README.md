@@ -8,6 +8,8 @@ Undergraduate Statistics student at UC Davis.
 I've been diving into a lot of statistical computing here because of my interests in _Bioinformatics_.  I'm very grateful for the oppourtunity to study here, as I seem to learn something amazing every week. I hope that the content I post on this site can inspire others as well. 
 ![PPI](http://www.cs.usyd.edu.au/~shhong/PPI.jpg)
 
+<sup><i>Visualisation and Analysis of Large and Complex Scale-free Networks.</i> Ahmed et. al, 2005 </sup>
+
 ### Recent Projects
 
 #### [STA141B: An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ)
