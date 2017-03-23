@@ -10,7 +10,7 @@ I've been diving into a lot of statistical computing here because of my interest
 ![PPI](http://www.cs.usyd.edu.au/~shhong/PPI.jpg)
 
 <sup>
-"Concentric sphere layout of PPI network"<br>
+"Concentric sphere layout of PPI network." 
 <i>Visualisation and Analysis of Large and Complex Scale-free Networks.</i> 
 Ahmed et. al, 2005 
 </sup>
