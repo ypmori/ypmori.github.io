@@ -20,3 +20,5 @@ Ahmed et. al, 2005
 #### [STA141B: An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ+Stock+Analysis)
 I worked with a couple other students for our class on Data and Web Technologies for Data Analysis.
 Please check it out! It also marks my first ever collaborative project on GitHub. 
+
+#### [STA141C: Video Game Reccommender Systems](https://ypmori.github.io/STA141C_Report.pdf)
