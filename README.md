@@ -4,12 +4,12 @@ Hello and welcome to my personal site! All content published here will represent
 
 ### About Me
 4th year Undergraduate student at UC Davis.
-</br>
+<\br>
 B.S. in Statistics, Minor in Computer Science
-</br>
+<\br>
 
 Currently, I work as a Bioinformatics [Researcher/Intern](http://michelmorelab.ucdavis.edu/member_page.php?id=170) at the UC Davis Genome Center. Generally my work revolves around Bash/Python/R scripting and genomic analysis, and statistical computing.
-</br>
+<\br>
 Upon graduation, I will be pursuing a full-time Data Science or Analyst role.
 
 
@@ -29,5 +29,5 @@ Please check it out! It also marks my first ever collaborative project on GitHub
 
 #### [STA141C: Video Game Reccommender Systems](https://ypmori.github.io/STA141C_Report.pdf)
 
-#### [ECS171 (Data Management Team) : Joke Rating AI](https://github.com/ECS171/data/blob/master/ECS171_Project_Report-3.pdf)
+#### [ECS171 (Data Management Team) : Joke Rating AI](https://ypmori.github.io/ECS171_Project_Report-3.pdf)
 This class-wide project is essentially a joke reccomender system. Our Data Management Team was in charge of collecting, cleaning, analyzing, and distributing the necessary training data to the ML and Software Development teams.
