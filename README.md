@@ -1,6 +1,6 @@
 # Yuji Mori 
 
-Hello and welcome to my personal site! All content published here will represent my academic projects and/or independent work.
+Hello and welcome to my personal site! All content published here represents my academic projects and/or independent work.
 
 ### About Me
 #### 4th year Undergraduate @ UC Davis
@@ -24,11 +24,10 @@ Ahmed et. al, 2005
 
 ### Recent Projects
 
-#### [STA141B: An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ+Stock+Analysis)
-I worked with a couple other students for our class on Data and Web Technologies for Data Analysis.
-Please check it out! It also marks my first ever collaborative project on GitHub. 
+#### [ECS171: Joke Rating AI (Data Management Team) ](https://ypmori.github.io/ECS171_Project_Report-3.pdf)
+This class-wide project is essentially a joke reccomender system. Our Data Management Team was in charge of collecting, cleaning, analyzing, and distributing the necessary training data to the ML and Software Development teams.
 
 #### [STA141C: Video Game Reccommender Systems](https://ypmori.github.io/STA141C_Report.pdf)
 
-#### [ECS171 (Data Management Team) : Joke Rating AI](https://ypmori.github.io/ECS171_Project_Report-3.pdf)
-This class-wide project is essentially a joke reccomender system. Our Data Management Team was in charge of collecting, cleaning, analyzing, and distributing the necessary training data to the ML and Software Development teams.
+#### [STA141B: An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ+Stock+Analysis)
+
