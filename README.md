@@ -3,13 +3,14 @@
 Hello and welcome to my personal site! All content published here will represent my academic projects and/or independent work.
 
 ### About Me
-4th year Undergraduate student at UC Davis.
-<\br>
-B.S. in Statistics, Minor in Computer Science
-<\br>
+#### 4th year Undergraduate @ UC Davis
+
+#### B.S. in Statistics, Minor in Computer Science
+
 
 Currently, I work as a Bioinformatics [Researcher/Intern](http://michelmorelab.ucdavis.edu/member_page.php?id=170) at the UC Davis Genome Center. Generally my work revolves around Bash/Python/R scripting and genomic analysis, and statistical computing.
-<\br>
+
+
 Upon graduation, I will be pursuing a full-time Data Science or Analyst role.
 
 
