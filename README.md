@@ -8,10 +8,10 @@ Hello and welcome to my personal site! All content published here represents my 
 #### B.S. in Statistics, Minor in Computer Science
 
 
-Currently, I work as a Bioinformatics [Researcher/Intern](http://michelmorelab.ucdavis.edu/member_page.php?id=170) at the UC Davis Genome Center. Generally my work revolves around Bash/Python/R scripting and genomic analysis, and statistical computing.
+Currently, I work as a Bioinformatics [Researcher/Intern](http://michelmorelab.ucdavis.edu/member_page.php?id=170) at the UC Davis Genome Center. Generally my work revolves around Bash/Python/R scripting, genomic analysis, and statistical computing.
 
 
-Upon graduation, I will be pursuing a full-time Data Science or Analyst role.
+Upon graduation, I will be pursuing a full-time Data Science or Analyst role within California.
 
 
 ![PPI](http://www.cs.usyd.edu.au/~shhong/PPI.jpg)
