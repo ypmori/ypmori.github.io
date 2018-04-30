@@ -27,7 +27,7 @@ Ahmed et. al, 2005
 #### [ECS171: Joke Rating AI (Data Management Team) ](https://ypmori.github.io/ECS171_Project_Report-3.pdf)
 This class-wide project is essentially a joke reccomender system. Our Data Management Team was in charge of collecting, cleaning, analyzing, and distributing the necessary training data to the ML and Software Development teams.
 
-#### [STA141C: Video Game Reccommender Systems](https://ypmori.github.io/STA141C_Report.pdf)
+#### [STA141C: Video Game Recommender Systems](https://ypmori.github.io/STA141C_Report.pdf)
 
 #### [STA141B: An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ+Stock+Analysis)
 
