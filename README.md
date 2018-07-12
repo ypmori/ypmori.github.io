@@ -24,10 +24,12 @@ Ahmed et. al, 2005
 
 ### Recent Projects
 
-#### [ECS171: Joke Rating AI (Data Management Team) ](https://ypmori.github.io/ECS171_Project_Report-3.pdf)
+#### [Analysis of Bay Area Traffic](https://laic5.github.io/traffic/)
+
+#### [Joke Rating AI (UC Davis Fall 2017 Machine Learning: Data Management Team) ](https://ypmori.github.io/ECS171_Project_Report-3.pdf)
 This class-wide project is essentially a joke recommender system. Our Data Management Team was in charge of collecting, cleaning, analyzing, and distributing the necessary training data to the ML and Software Development teams.
 
-#### [STA141C: Video Game Recommender Systems](https://ypmori.github.io/STA141C_Report.pdf)
+#### [Video Game Recommender Systems](https://ypmori.github.io/STA141C_Report.pdf)
 
-#### [STA141B: An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ+Stock+Analysis)
+#### [An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ+Stock+Analysis)
 
