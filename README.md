@@ -6,12 +6,9 @@ Hello and welcome to my personal site! All content published here represents my 
 
 #### B.S. in Statistics, Minor in Computer Science @ UC Davis
 
-
-Most recently, I worked as a Bioinformatics [Researcher/Intern](http://michelmorelab.ucdavis.edu/member_page.php?id=170) at the UC Davis Genome Center. Generally my work revolved around Bash/Python/R scripting, genomic analysis, and statistical computing. 
-
-
 As of now, I am pursuing a full-time Data Science or Analyst role within California.
 
+Most recently, I worked as a Bioinformatics [Researcher/Intern](http://michelmorelab.ucdavis.edu/member_page.php?id=170) at the UC Davis Genome Center. Generally my work revolved around Bash/Python/R scripting, genomic analysis, and statistical computing. Check out my research poster [here](https://ypmori.github.io/URC_Poster_Submission_Mori.pdf). 
 
 ![PPI](http://www.cs.usyd.edu.au/~shhong/PPI.jpg)
 
@@ -32,3 +29,5 @@ This class-wide project is essentially a joke recommender system. Our Data Manag
 
 #### [An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ+Stock+Analysis)
 
+
+**Note:** My research-related code is kept in a private repository, but I would be happy to share select code samples upon request.
