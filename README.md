@@ -1,24 +1,22 @@
 # Yuji Mori 
 
-Hello and welcome to my personal site! All content published here represents my academic projects and/or independent work.
-
 ### About Me 
+
+![Avatar](https://avatars3.githubusercontent.com/u/18077506?s=400&u=15dcfc6c92e1dd848a323d19d42e0e09bb9d0000&v=4)
+
+#### Data Engineering Analyst @Experian
 
 #### B.S. in Statistics, Minor in Computer Science @ UC Davis
 
-As of now, I am pursuing a full-time Data Science or Analyst role within California.
+I am a California-based data analyst currently working in the credit industry.
 
-Most recently, I worked as a Bioinformatics [Researcher/Intern](http://michelmorelab.ucdavis.edu/member_page.php?id=170) at the UC Davis Genome Center. Generally my work revolved around Bash/Python/R scripting, genomic analysis, and statistical computing. Check out my research poster [here](https://ypmori.github.io/URC_Poster_Submission_Mori.pdf). 
+My career interests include all-things-data-science such as statistical programming, machine learning, data visualization, and data engineering.
 
-![PPI](http://www.cs.usyd.edu.au/~shhong/PPI.jpg)
-
-<sup>
-"Concentric sphere layout of PPI network." 
-<i>Visualisation and Analysis of Large and Complex Scale-free Networks.</i> 
-Ahmed et. al, 2005 
-</sup>
+Previously I was a Bioinformatics Researcher/Intern at the UC Davis Genome Center. Check out my research poster [here](https://ypmori.github.io/URC_Poster_Submission_Mori.pdf). 
 
 ### Recent Projects
+
+All content published here represents my independent projects and/or academic work.
 
 #### [Analysis of Bay Area Traffic](https://laic5.github.io/traffic/)
 
@@ -29,5 +27,3 @@ This class-wide project is essentially a joke recommender system. Our Data Manag
 
 #### [An Analysis of NASDAQ Stock Indices](https://ypmori.github.io/NASDAQ+Stock+Analysis)
 
-
-**Note:** My research-related code is kept in a private repository, but I would be happy to share select code samples upon request.
