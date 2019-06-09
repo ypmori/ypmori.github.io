@@ -2,8 +2,6 @@
 
 ### About Me 
 
-![Avatar](https://avatars3.githubusercontent.com/u/18077506?s=400&u=15dcfc6c92e1dd848a323d19d42e0e09bb9d0000&v=4)
-
 #### Data Engineering Analyst @Experian
 
 #### B.S. in Statistics, Minor in Computer Science @ UC Davis
