@@ -1,10 +1,8 @@
 # Yuji Mori 
 
-### About Me 
+### Data Engineering Analyst @Experian
 
-#### Data Engineering Analyst @Experian
-
-#### B.S. in Statistics, Minor in Computer Science @ UC Davis
+### B.S. in Statistics, Minor in Computer Science @ UC Davis
 
 I am a California-based data analyst currently working in the credit industry.
 
@@ -19,7 +17,6 @@ All content published here represents my independent projects and/or academic wo
 #### [Analysis of Bay Area Traffic](https://laic5.github.io/traffic/)
 
 #### [Joke Rating AI (UC Davis Fall 2017 Machine Learning: Data Management Team) ](https://ypmori.github.io/ECS171_Project_Report-3.pdf)
-This class-wide project is essentially a joke recommender system. Our Data Management Team was in charge of collecting, cleaning, analyzing, and distributing the necessary training data to the ML and Software Development teams.
 
 #### [Video Game Recommender Systems](https://ypmori.github.io/STA141C_Report.pdf)
 
