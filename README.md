@@ -1,10 +1,11 @@
 # Yuji Mori 
 
-#### Data Engineering Analyst @Experian
+#### Data Engineering Analyst @ Experian
 
-#### B.S. in Statistics, Minor in Computer Science @ UC Davis
+####  Master's Student @ UCLA Statistics
+##### B.S. in Statistics, Minor in Computer Science @ UC Davis
 
-I am a California-based data analyst currently working in the credit industry.
+I am a California-based data analyst currently working in the credit industry. Also pursuing a Master's in Applied Statistics at UCLA (part-time enrollment).
 
 My career interests include all things Data Science, such as statistical programming, machine learning, data visualization, and data engineering.
 
