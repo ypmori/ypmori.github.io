@@ -15,6 +15,8 @@ Previously I was a Bioinformatics Researcher/Intern at the UC Davis Genome Cente
 
 All content published here represents my independent projects and/or academic work.
 
+#### [Google Analytics Customer Purchase Prediction](https://github.com/ypmori/Google_Analytics_Prediction)
+
 #### [Analysis of Bay Area Traffic](https://laic5.github.io/traffic/)
 
 #### [Joke Rating AI (UC Davis Fall 2017 Machine Learning: Data Management Team) ](https://ypmori.github.io/ECS171_Project_Report-3.pdf)
