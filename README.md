@@ -15,7 +15,7 @@ Previously I was a Bioinformatics Researcher/Intern at the UC Davis Genome Cente
 
 All content published here represents my independent projects and/or academic work.
 
-#### [Marketing Churn Prediction Model](https://github.com/ypmori/ypmori.github.io/tree/master/churn_challenge)
+#### [Marketing Churn Prediction Model](https://github.com/ypmori/Marketing_Churn)
 
 #### [Google Analytics Customer Purchase Prediction](https://github.com/ypmori/Google_Analytics_Prediction)
 
