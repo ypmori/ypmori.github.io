@@ -5,7 +5,7 @@
 ####  Master's in Applied Statistics @ UCLA
 ##### B.S. in Statistics, Minor in Computer Science @ UC Davis
 
-I am a California-based Data Scientist currently working in the Healthcare industry :hospital:
+I am a California-based Data Scientist currently working in the Healthcare industry 🚑
 
 My career interests include all things Data Science, such as statistical programming, machine learning, data visualization, and data engineering.
 
