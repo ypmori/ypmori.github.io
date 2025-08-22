@@ -3,429 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuji Mori | Senior Data Scientist</title>
+    <title>Yuji Mori | Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* CSS for styling the portfolio */
+        /* --- General Styles --- */
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #3498db;
             --background-color: #ecf0f1;
             --text-color: #34495e;
-            --header-color: #ffffff;
-            --card-bg-color: #ffffff;
-            --shadow: 0 4px 8px rgba(0,0,0,0.1);
+            --light-gray: #bdc3c7;
+            --white: #ffffff;
         }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        /* Navigation Bar */
-        .navbar {
-            background-color: var(--primary-color);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: var(--shadow);
-        }
-        .nav-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-        }
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-        .nav-links a {
-            color: var(--header-color);
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .nav-links a:hover, .nav-links a.active {
-            background-color: var(--secondary-color);
-        }
-        /* Header Section */
-        .header {
-            background-color: var(--header-color);
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        .header h1 {
-            color: var(--primary-color);
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .header p {
-            font-size: 1.2em;
-            color: var(--secondary-color);
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-        /* Main Content Sections */
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        section:last-of-type {
-            border-bottom: none;
-        }
-        h2 {
-            text-align: center;
-            color: var(--primary-color);
-            margin-bottom: 40px;
-            font-size: 2em;
-        }
-        /* Accordion for Experience & Education */
-        .accordion-item {
-            background-color: var(--card-bg-color);
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            overflow: hidden;
-        }
-        .accordion-header {
-            background-color: var(--header-color);
-            padding: 15px 20px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1.1em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #eee;
-        }
-        .accordion-header:hover {
-            background-color: #f9f9f9;
-        }
-        .accordion-header::after {
-            content: '+';
-            font-size: 1.5em;
-            color: var(--secondary-color);
-            transition: transform 0.3s;
-        }
-        .accordion-item.active .accordion-header::after {
-            transform: rotate(45deg);
-        }
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease-out;
-            padding: 0 20px;
-        }
-        .accordion-content .content-inner {
-            padding: 20px 0;
-        }
-        .accordion-content p {
-            margin-top: 0;
-        }
-        .accordion-content ul {
-            padding-left: 20px;
-        }
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .skill-category {
-            background: var(--card-bg-color);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-        }
-        .skill-category h3 {
-            color: var(--secondary-color);
-            margin-top: 0;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 10px;
-        }
-        .skill-category ul {
-            list-style: none;
-            padding: 0;
-        }
-        .skill-category li {
-            margin-bottom: 10px;
-        }
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: var(--primary-color);
-            color: var(--header-color);
-        }
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            .nav-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            .header h1 {
-                font-size: 2em;
-            }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Lato', sans-serif; color: var(--text-color); background-color: var(--background-color); line-height: 1.6; }
+        h1, h2, h3, h4 { font-family: 'Roboto', sans-serif; font-weight: 500; color: var(--primary-color); margin-bottom: 20px; }
+        h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
+        section { padding: 100px 20px; }
+        section:nth-of-type(even) { background-color: var(--white); }
+        .container { max-width: 960px; margin: 0 auto; }
+
+        /* --- Header & Navigation --- */
+        #header { background-color: var(--white); position: fixed; width: 100%; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 30px; }
+        .nav-links a { text-decoration: none; color: var(--text-color); font-weight: 700; transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--secondary-color); }
+        .burger { display: none; cursor: pointer; }
+        .burger div { width: 25px; height: 3px; background-color: var(--primary-color); margin: 5px; transition: all 0.3s ease; }
+
+        /* --- Home Section --- */
+        #home { background-color: var(--white); min-height: 100vh; display: flex; align-items: center; text-align: center; }
+        #home h1 { font-size: 4rem; margin-bottom: 10px; }
+        #home h2 { font-size: 1.5rem; color: var(--secondary-color); margin-bottom: 20px; font-weight: 400; }
+        #home .summary { font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.8; }
+        .headshot { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 20px auto; border: 4px solid var(--background-color); }
+
+        /* --- Experience & Projects (Collapsible) --- */
+        .collapsible-btn { background-color: var(--white); color: var(--primary-color); cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 1.2rem; font-family: 'Roboto', sans-serif; font-weight: 500; margin-top: 10px; border-left: 5px solid var(--light-gray); transition: all 0.3s ease; }
+        .collapsible-btn:hover, .collapsible-btn.active { background-color: #f9f9f9; border-left: 5px solid var(--secondary-color); }
+        .collapsible-btn:after { content: '+'; font-size: 1.5rem; color: var(--secondary-color); float: right; }
+        .collapsible-btn.active:after { content: "-"; }
+        .collapsible-content { padding: 0 18px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background-color: var(--white); border-left: 5px solid var(--light-gray); }
+        .collapsible-content ul { list-style-position: inside; padding: 20px 0; }
+        .collapsible-content li { margin-bottom: 10px; }
+        .collapsible-content p, .collapsible-content ul { margin: 15px 0; }
+        .project-link { display: inline-block; margin-top: 15px; text-decoration: none; font-weight: bold; color: var(--primary-color); background-color: var(--background-color); padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease; }
+        .project-link:hover { background-color: #e0e0e0; }
+        
+        /* --- Education Section (Static) --- */
+        #education .education-entry { background-color: var(--white); padding: 20px; margin-bottom: 20px; border-left: 5px solid var(--light-gray); }
+        #education h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 5px; }
+        #education p { margin: 0; }
+        #education .degree { font-weight: bold; }
+        .thesis-section { margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; }
+        .thesis-section h4 { font-size: 1.1rem; color: var(--secondary-color); }
+        .thesis-section ul { list-style-position: inside; padding-left: 10px; }
+        .thesis-section li { margin-bottom: 8px; }
+
+        /* --- Skills Section --- */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .skill-category h3 { color: var(--secondary-color); border-bottom: 2px solid var(--background-color); padding-bottom: 10px; }
+        .skill-category ul { list-style: none; margin-top: 15px; }
+        .skill-category li { padding: 5px 0; }
+
+        /* --- Contact Section --- */
+        #contact { text-align: center; }
+        .contact-links { list-style: none; padding: 20px 0; }
+        .contact-links li { display: inline-block; margin: 0 15px; }
+        .contact-links a { text-decoration: none; color: var(--secondary-color); font-size: 1.2rem; font-weight: 700; }
+
+        /* --- Responsive Design --- */
+        @media screen and (max-width: 768px) {
+            body { overflow-x: hidden; }
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2rem; }
+            .nav-links { position: absolute; right: 0px; height: 92vh; top: 8vh; background-color: var(--white); display: flex; flex-direction: column; align-items: center; width: 50%; transform: translateX(100%); transition: transform 0.5s ease-in; }
+            .nav-links li { opacity: 0; margin: 20px 0; }
+            .burger { display: block; }
+            .nav-active { transform: translateX(0%); }
+            @keyframes navLinkFade { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0px); } }
+            .toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); }
+            .toggle .line2 { opacity: 0; }
+            .toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
+    <header id="header">
+        <nav>
+            <div class="logo">Yuji Mori</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Personal Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <header id="top" class="header">
-        <h1>Yuji Mori</h1>
-        <p>Senior Data Scientist | Healthcare Analytics & Product Strategy</p>
-        <div class="contact-info">
-            <a href="mailto:yuji.p.mori@gmail.com">yuji.p.mori@gmail.com</a> |
-            <a href="https://github.com/ypmori" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/ypmori/" target="_blank">LinkedIn</a>
-        </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Impact-driven Senior Data Scientist with 7+ years of experience, currently focused on healthcare analytics and product development. Adept at translating ambiguous business problems into data-supported solutions, leveraging advanced causal inference and statistical modeling to drive product strategy and user engagement. A proven technical leader with a strong track record of building end-to-end data pipelines and spearheading the adoption of Generative AI and other advanced analytics to achieve company-wide efficiencies.</p>
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Yuji Mori</h1>
+                <img src="assets/headshot.png" alt="Headshot of Yuji Mori" class="headshot">
+                <h2>Data Scientist working in the healthcare space</h2>
+                <p class="summary">
+                    Impact-driven Data Scientist with 6 years of experience in analytics and product development. Adept at translating ambiguous business problems into data-supported solutions leveraging advanced causal inference and statistical modeling. A proven technical leader with a strong track record of building end-to-end data pipelines and spearheading the adoption of Generative AI and other advanced analytics to achieve company-wide efficiencies.
+                </p>
+            </div>
         </section>
 
         <section id="experience">
-            <h2>Professional Experience</h2>
-            
-            <div class="accordion-item">
-                <div class="accordion-header">Healthcare & Causal Inference</div>
-                <div class="accordion-content">
-                    <div class="content-inner">
-                        <p>Specializing in proving the financial and clinical value of healthcare interventions. I design and execute advanced causal inference studies (e.g., Difference-in-Differences, Propensity Score Matching) to quantify multi-million dollar ROI for major enterprise clients like Amazon and Meta. My analyses demonstrate significant cost savings and improved clinical outcomes by comparing engaged member populations against matched control groups using extensive medical claims data.</p>
+            <div class="container">
+                <h2>Experience by Expertise</h2>
+                
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">Healthcare Analytics & Causal Inference</button>
+                    <div class="collapsible-content">
+                        <p>My work focuses on using advanced research methods to prove the value and effectiveness of healthcare services through financial and clinical outcomes.</p>
                         <ul>
-                            <li>Quantified cost savings by analyzing reductions in urgent care visits, hospitalizations, and specialty care utilization.</li>
-                            <li>Measured clinical outcome improvements for chronic condition populations (Diabetes, Hypertension, Obesity, Mental Health) by tracking key biomarkers like A1c, BMI, and PHQ-9 scores.</li>
-                            <li>Leveraged deep knowledge of medical data, including diagnosis codes (ICD-10), CPT codes, HEDIS measures, and EMR data to build robust patient cohorts for analysis.</li>
+                            <li>I have leveraged causal inference to quantify cost savings by analyzing medical claims data from two distinct populations: members who used our product and a comparable cohort who did not.</li>
+                            <li>My research demonstrated that engaged members achieved significant savings in community healthcare utilization, including reductions in urgent care visits, hospitalizations, and specialty visits.</li>
+                            <li>My analysis and key insights were presented to senior leadership and directly influenced major strategic decisions.</li>
+                            <li>I have also measured the impact of treatments on clinical outcomes for chronic condition populations, such as diabetics (lowering A1c), obesity (reducing BMI), hypertension (lowering blood pressure), and mental health conditions (improving PHQ-9 and GAD-7 scores).</li>
+                            <li>With extensive daily experience in medical data, I utilize a comprehensive knowledge of medical claims, diagnosis codes, CPT codes, HEDIS, and EMRs to inform product and experimental design.</li>
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <div class="accordion-header">Product Analytics</div>
-                <div class="accordion-content">
-                    <div class="content-inner">
-                        <p>In my role, I treat the patient's care journey as a product, applying core data science principles to optimize the healthcare experience. I lead comprehensive funnel and cohort analyses to map the member journey, identifying key drop-off points and areas of friction from acquisition to long-term engagement.</p>
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">Product Analytics</button>
+                    <div class="collapsible-content">
+                        <p>In my role, I apply core product data science principles to optimize our healthcare service, treating the patient's care journey as the product.</p>
                         <ul>
-                            <li>Analyzed patient acquisition and engagement funnels for campaigns targeting flu shots and mental health awareness.</li>
-                            <li>Conducted detailed cohort analyses for patients with chronic conditions to measure long-term engagement and financial value.</li>
-                            <li>Utilized NLP on unstructured survey feedback and patient messages to generate actionable insights for clinical teams, leading to a 5% boost in patient satisfaction KPIs.</li>
+                            <li>I have led comprehensive funnel and cohort analyses to inform business strategy by mapping the member journey from acquisition through their entire course of care to identify drop-off points.</li>
+                            <li>My work involves analyzing how different campaigns influence patient acquisition and subsequent engagement. I also conduct detailed cohort analyses, segmenting our population by chronic condition to understand long-term engagement and measure financial value over time.</li>
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <div class="accordion-header">AI/ML Product Development & Strategy</div>
-                <div class="accordion-content">
-                    <div class="content-inner">
-                        <p>I have a strong track record of leading the development and deployment of machine learning products. A primary example is my leadership on the "Health Score" project, the first user-facing ML model in my company's history. This predictive algorithm forecasts patient health trajectories to enable proactive interventions.</p>
-                         <ul>
-                            <li>Currently leading the enhancement of the Health Score algorithm by exploring advanced ML and deep learning approaches to replace the initial genetic algorithm.</li>
-                            <li>Championed and led the development of an internal, AI-powered knowledge base using Generative AI, enabling client-facing teams to retrieve information on products and contracts instantly.</li>
-                            <li>Oversaw a large-scale data migration project by automating the translation of thousands of production SQL scripts from MS SQL-Server to Snowflake, proving the immediate operational value of AI.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-item">
-                <div class="accordion-header">Marketing Analytics</div>
-                <div class="accordion-content">
-                    <div class="content-inner">
-                        <p>I apply rigorous data science methods to measure and optimize marketing initiatives. My work involves using statistical models to quantify the impact of campaigns on patient engagement, acquisition, and lifetime value (LTV).</p>
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">Marketing Analytics</button>
+                    <div class="collapsible-content">
+                        <p>I possess extensive experience applying data science principles to marketing analytics. My work has involved analyzing the impact of specific marketing campaigns designed to drive patient engagement and acquisition.</p>
                         <ul>
-                            <li>Conducted an in-depth analysis of a flu shot campaign, using attribution and LTV models to measure its impact on patient acquisition and engagement.</li>
-                            <li>Demonstrated that on-site campaigns were significantly more effective than digital outreach, directly influencing a strategic company investment in a fleet of mobile clinics.</li>
-                            <li>Presented findings to senior leadership, translating complex data into a clear business narrative that drove strategic decisions.</li>
+                            <li>I conducted an in-depth analysis of a flu shot campaign by applying statistical models, including attribution and retention analysis, to quantify the campaign's direct impact.</li>
+                            <li>My analysis revealed that "on-site" campaigns were significantly more effective at driving engagement than digital outreach methods.</li>
                         </ul>
                     </div>
                 </div>
-            </div>
+                
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">Machine Learning & AI Strategy</button>
+                    <div class="collapsible-content">
+                        <p>I have proactively identified and led the development of key initiatives to bring machine learning and deep learning capabilities into production. As the lead technical representative on our company’s AI Committee, I was tasked with guiding the organization in the strategic adoption of AI/ML tools.</p>
+                        <ul>
+                             <li>I led the "Health Score" project, an algorithm to provide a comprehensive health score for each patient. The objective is to develop a predictive model that can assess a patient’s health trajectory and forecast adverse outcomes, enabling proactive interventions.</li>
+                            <li>I championed the development of an internal, AI-powered knowledge base using Generative AI, allowing client-facing teams to quickly retrieve information on products, projects, and contracts.</li>
+                            <li>I played a critical role in a large-scale data migration project, overseeing the automated translation of thousands of in-production SQL scripts from MS SQL-Server to Snowflake SQL.</li>
+                            <li>I have also conceptualized predictive models to optimize marketing campaign performance by forecasting patient engagement and retention.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>R</li>
-                        <li>SQL</li>
-                        <li>SAS</li>
-                        <li>C++</li>
-                        <li>Perl</li>
-                        <li>Shell Scripting (Bash)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Statistics & Machine Learning</h3>
-                    <ul>
-                        <li>Causal Inference</li>
-                        <li>AI & Deep Learning (TensorFlow)</li>
-                        <li>NLP</li>
-                        <li>Regression & A/B Testing</li>
-                        <li>Multivariate Analysis</li>
-                        <li>Clustering & Classification</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Data Engineering</h3>
-                    <ul>
-                        <li>Snowflake</li>
-                        <li>Hadoop Hive</li>
-                        <li>Spark & MapReduce</li>
-                        <li>AWS Suite</li>
-                        <li>Azure</li>
-                        <li>dbt</li>
-                        <li>Airflow</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Visualization & Tools</h3>
-                    <ul>
-                        <li>Tableau</li>
-                        <li>Matplotlib / ggplot</li>
-                        <li>Plotly</li>
-                        <li>Shiny / Streamlit</li>
-                        <li>Git / Github</li>
-                        <li>Jupyter Notebooks</li>
-                        <li>JIRA</li>
-                    </ul>
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">Mentorship & Technical Leadership</button>
+                    <div class="collapsible-content">
+                        <p>I have a strong background in mentoring and developing the next generation of data professionals. My mentorship focused on equipping junior data analysts with essential skills for success.</p>
+                        <ul>
+                            <li>My guidance covered deep-dive analyses of complex datasets like medical claims, dashboard creation, and writing efficient, clean SQL code.</li>
+                            <li>I supervised projects involving intricate data-matching processes to create a unified, person-level identity from disparate data sources, a foundational task for accurate reporting.</li>
+                            <li>My goal has been to cultivate a culture of continuous career growth and technical excellence.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="education">
-            <h2>Education</h2>
-            <div class="accordion-item">
-                <div class="accordion-header">University of California, Los Angeles (UCLA)</div>
-                <div class="accordion-content">
-                    <div class="content-inner">
-                        <p><strong>Master of Applied Statistics</strong> (2020-2022)</p>
+            <div class="container">
+                <h2>Education</h2>
+                <div class="education-entry">
+                    <h3>University of California, Los Angeles (2020-2022)</h3>
+                    <p class="degree">Master of Applied Statistics</p>
+                    <div class="thesis-section">
+                        <h4>Master’s Thesis: Applications of Natural Language Processing for Predicting Self-Harm Risk</h4>
+                        <ul>
+                            <li>Developed an NLP-based self-harm risk prediction model using BERT-based Neural Networks, Random Forests, and sentiment analysis on social media text.</li>
+                            <li>Demonstrated that fine-tuned BERT significantly outperforms Random Forests in classification accuracy while maintaining reasonable computational efficiency.</li>
+                            <li><a href="#">Link to Full Paper</a></li>
+                            <li><a href="#">Link to Code on GitHub</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">University of California, Davis</div>
-                <div class="accordion-content">
-                    <div class="content-inner">
-                        <p><strong>Bachelor of Science (B.S.) in Statistics</strong> (2014-2018)</p>
-                        <p><em>Minor in Computer Science</em></p>
-                    </div>
+                <div class="education-entry">
+                    <h3>University of California, Davis (2014-2018)</h3>
+                    <p class="degree">Bachelor of Science (B.S.) in Statistics, Minor in Computer Science</p>
                 </div>
             </div>
-            
-            <h2>Master's Thesis</h2>
-            <div class="accordion-item">
-                <div class="accordion-header">Applications of Natural Language Processing for Predicting Self-Harm Risk</div>
-                <div class="accordion-content">
-                    <div class="content-inner">
-                        <p>Developed an NLP-based self-harm risk prediction model using BERT-based Neural Networks, Random Forests, and sentiment analysis on social media text. This research demonstrated that a fine-tuned BERT model significantly outperforms Random Forests in classification accuracy while maintaining reasonable computational efficiency.</p>
-                        <p>
-                            <!-- NOTE: Replace # with actual links when available -->
-                            <a href="#" target="_blank"><strong>View Full Paper</strong></a> | 
-                            <a href="#" target="_blank"><strong>View Code on GitHub</strong></a>
-                        </p>
+        </section>
+        
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <ul><li>Python, R, SQL, SAS, C++, Perl, Shell Scripting (Bash)</li></ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Statistics + Machine Learning</h3>
+                        <ul><li>Causal Inference, AI Deep Learning (TensorFlow), NLP</li><li>Regression, A/B Testing, Multivariate Analysis, Clustering, Classification</li></ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Engineering</h3>
+                        <ul><li>Snowflake, Hadoop Hive, Spark + MapReduce, AWS Suite, Azure</li></ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Visualization / Dashboards</h3>
+                        <ul><li>Tableau, matplotlib, ggplot, Plotly, Shiny, Streamlit</li></ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Other Tools</h3>
+                        <ul><li>Git / Github, Jupyter Notebooks, Airflow (Amazon MWAA), dbt, Atlassian JIRA</li></ul>
                     </div>
                 </div>
             </div>
         </section>
 
-    </div>
+        <section id="projects">
+            <div class="container">
+                <h2>Personal Projects</h2>
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">NASDAQ Stock Analysis</button>
+                    <div class="collapsible-content">
+                        <p>An analysis of NASDAQ stock data, showcasing time-series analysis and visualization techniques.</p>
+                        <a href="assets/NASDAQ+Stock+Analysis.html" class="project-link" target="_blank">View Analysis</a>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">Predicting Board Game Ratings</button>
+                    <div class="collapsible-content">
+                        <p>A machine learning project focused on feature engineering and predictive modeling to estimate board game ratings.</p>
+                        <a href="assets/ECS171_Project_Report-3.pdf" class="project-link" target="_blank">Read the Report (PDF)</a>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">Computational Statistics in R</button>
+                    <div class="collapsible-content">
+                        <p>A report covering various computational statistics methods and their implementation in the R programming language.</p>
+                        <a href="assets/STA141C_Report.pdf" class="project-link" target="_blank">Read the Report (PDF)</a>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    <button type="button" class="collapsible-btn">Undergraduate Research Poster</button>
+                    <div class="collapsible-content">
+                        <p>A research poster submission for the Undergraduate Research Conference, summarizing key findings and methodologies.</p>
+                        <a href="assets/URC_Poster_Submission_Mori.pdf" class="project-link" target="_blank">View Poster (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Yuji Mori</p>
-    </footer>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Feel free to reach out. I'm always open to discussing new projects or opportunities.</p>
+                <ul class="contact-links">
+                    <li><a href="mailto:yuji.p.mori@gmail.com">yuji.p.mori@gmail.com</a></li>
+                    <li><a href="https://github.com/ypmori" target="_blank">github.com/ypmori</a></li>
+                    <li><a href="#" target="_blank">LinkedIn</a></li> <!-- Replace # with your LinkedIn URL -->
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <script>
-        // JavaScript for accordion and active nav link
         document.addEventListener('DOMContentLoaded', function () {
-            const accordionItems = document.querySelectorAll('.accordion-item');
-            accordionItems.forEach(item => {
-                const header = item.querySelector('.accordion-header');
-                header.addEventListener('click', () => {
-                    const content = item.querySelector('.accordion-content');
-                    if (item.classList.contains('active')) {
-                        item.classList.remove('active');
+            // --- Collapsible Sections ---
+            const collapsibles = document.querySelectorAll(".collapsible-btn");
+            collapsibles.forEach(button => {
+                button.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    const content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
                         content.style.maxHeight = null;
                     } else {
-                        // Close other active items
-                        accordionItems.forEach(otherItem => {
-                            if (otherItem.classList.contains('active')) {
-                                otherItem.classList.remove('active');
-                                otherItem.querySelector('.accordion-content').style.maxHeight = null;
-                            }
-                        });
-                        item.classList.add('active');
                         content.style.maxHeight = content.scrollHeight + "px";
                     }
                 });
             });
 
-            // Active nav link scrolling
-            const navLinks = document.querySelectorAll('.nav-links a');
-            const sections = document.querySelectorAll('section');
-
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 60) {
-                        current = section.getAttribute('id');
-                    }
+            // --- Mobile Navigation ---
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+            const navSlide = () => {
+                burger.addEventListener('click', () => {
+                    nav.classList.toggle('nav-active');
+                    navLinks.forEach((link, index) => {
+                        if (link.style.animation) {
+                            link.style.animation = '';
+                        } else {
+                            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                        }
+                    });
+                    burger.classList.toggle('toggle');
                 });
-
+            }
+            const closeNavOnClick = () => {
                 navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').substring(1) === current) {
-                        link.classList.add('active');
-                    }
+                    link.addEventListener('click', () => {
+                        if (nav.classList.contains('nav-active')) {
+                            nav.classList.remove('nav-active');
+                            burger.classList.remove('toggle');
+                            navLinks.forEach(link => { link.style.animation = ''; });
+                        }
+                    });
                 });
-            });
+            }
+            navSlide();
+            closeNavOnClick();
         });
     </script>
-
 </body>
 </html>
